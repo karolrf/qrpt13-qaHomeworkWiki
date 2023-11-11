@@ -19,20 +19,23 @@ describe("myFunction", () => {
 
 import { blockBuster } from "./newFunction";
 
-describe('Testing Block Buster', () => {
-  it('should return the movie set for MovieOne', () => {
-    expect(blockBuster()).toBe(""); 
+describe('Testing blockBuster', () => {
+  it("should return the movie set for Movie One", () => {
+    expect(blockBuster("movie One")).toBe("Coco"); 
   }); 
-  it("should return the movie set for movie two", () => {
-    expect(blockBuster()).toBe(""); 
+  it("should return the movie set for Movie Two", () => {
+    expect(blockBuster("movie Two")).toBe("The Boy Who Harnessed The Wind"); 
   }); 
-  it("should return the movie set for movie three", () => {
-    expect(blockBuster()).toBe(""); 
+  it("should return the movie set for Movie Three", () => {
+    expect(blockBuster("movie Three")).toBe("I'm Thinking of Ending Things"); 
   }); 
-  it("should return the movie set for movie four", () => {
-    expect(blockBuster()).toBe(""); 
+  it("should return the movie set for Movie Four", () => {
+    expect(blockBuster("movie Four")).toBe("Oppenheimer"); 
   });
   it("should return the movie set for movie five", () => {
-    expect(blockBuster()).toBe(""); 
+    expect(blockBuster("movie Five")).toBe("Top Gun: Maverick"); 
   }); 
+  it("should return the default", () => {
+    expect(blockBuster("Barbie")).toBe("I'm sorry we do not have Barbie!"); 
+  });
 }); 
