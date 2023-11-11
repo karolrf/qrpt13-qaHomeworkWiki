@@ -1,3 +1,4 @@
+// Here we are importing what we need from Selenium.
 import {
     Builder,
     By,
