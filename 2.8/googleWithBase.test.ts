@@ -9,7 +9,7 @@ test('do a search', async () => {
     let text = await google.getResults()
     expect(text).toContain('Breaking Bad')
     await fs.writeFile(`${__dirname}/google.png`,
-     await google.driver.takeScreenshot(), "Breaking Bad",
+     await google.driver.takeScreenshot(), "base64",
      (e) => {
          if (e) console.error(e)
          else console.log('Save Succesful')
